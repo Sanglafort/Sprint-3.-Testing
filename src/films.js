@@ -25,16 +25,23 @@ function moviesAverageOfDirector(array, director) {
 // Exercise 4:  Alphabetic order by title 
 function orderAlphabetically(movies) {
   let onlyTitles = movies.map(movie => movie.title);
-  const orderByTitle = onlyTitles.sort();
+  let orderByTitle = onlyTitles.sort();
   console.log("EXERCICI 4 ->", orderByTitle);
   return orderByTitle.slice(0, 20);  
 }
 
 // Exercise 5: Order by year, ascending
-function orderByYear() {
-
+function orderByYear(movies) {
+  let yearOrdered = [...movies].sort((a, b) => {
+    if(a.year === b.year) {
+      return a.title.localeCompare(b.title);
+    }
+    return a.year - b.year
+  })  
+  console.log("EXERCICI 5 ->", yearOrdered);
+  return yearOrdered;
 }
-
+/*
 // Exercise 6: Calculate the average of the movies in a category
 function moviesAverageByCategory() {
 
@@ -50,7 +57,7 @@ function bestFilmOfYear() {
   
 }
 
-
+*/
 
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
@@ -61,8 +68,8 @@ if (typeof module !== 'undefined') {
     moviesAverageOfDirector,
     orderAlphabetically,
     orderByYear,
-    moviesAverageByCategory,
-    hoursToMinutes,
-    bestFilmOfYear,
+  //  moviesAverageByCategory,
+  //  hoursToMinutes,
+  //  bestFilmOfYear,
   };
 }

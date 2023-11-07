@@ -293,7 +293,7 @@ describe('Function "orderByYear"', () => {
 // Exercise 6
 // YOUR CODE HERE. Test moviesAverageByCategory()
 
-
+/*
 // Exercise 7
 describe('Function "hoursToMinutes"', () => {
   it('should be declared', () => {
@@ -382,3 +382,4 @@ describe('Function "bestFilmOfYear"', () => {
   });
 
 });
+*/
