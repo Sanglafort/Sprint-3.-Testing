@@ -41,7 +41,7 @@ function orderByYear(movies) {
   console.log("EXERCICI 5 ->", yearOrdered);
   return yearOrdered;
 }
-/*
+
 // Exercise 6: Calculate the average of the movies in a category
 function moviesAverageByCategory() {
 
@@ -57,7 +57,7 @@ function bestFilmOfYear() {
   
 }
 
-*/
+
 
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
@@ -68,8 +68,8 @@ if (typeof module !== 'undefined') {
     moviesAverageOfDirector,
     orderAlphabetically,
     orderByYear,
-  //  moviesAverageByCategory,
-  //  hoursToMinutes,
-  //  bestFilmOfYear,
+    moviesAverageByCategory,
+    hoursToMinutes,
+    bestFilmOfYear,
   };
 }
