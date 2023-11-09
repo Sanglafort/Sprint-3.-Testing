@@ -52,7 +52,14 @@ function moviesAverageByCategory(movies, genre) {
 }
 
 // Exercise 7: Modify the duration of movies to minutes
-function hoursToMinutes() {
+function hoursToMinutes(movies) {
+  let arrayDuration = movies.duration
+  let createArray = arrayDuration.split("h");
+  let hours = Number(createArray[0]);
+  let minuts = Number(createArray[1].replace("min", ""));
+  let inMinuts = (hours * 60) + minuts;
+  console.log("EXERCICI 7 ->", inMinuts);
+  return {...movies, duration: inMinuts};
 
 }
 
